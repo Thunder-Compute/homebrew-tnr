@@ -1,0 +1,15 @@
+class Tnr < Formula
+  desc "Thunder Compute CLI"
+  homepage "https://github.com/Thunder-Compute/thunder-cli"
+  url "s3 bucket"
+  sha256 "example"
+  license "MIT"
+
+  def install
+    bin.install "tnr"
+  end
+
+  test do
+    system "#{bin}/tnr", "--version"
+  end
+end
