@@ -5,21 +5,21 @@
 class Tnr < Formula
   desc "Thunder Compute CLI"
   homepage "https://github.com/Thunder-Compute/thunder-cli"
-  version "0.1.61"
+  version "0.1.63"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.61/tnr_0.1.61_darwin_amd64.tar.gz"
-    sha256 "a01f471544bd26b48900539176305d6365e0b17255f09150973c08b6e8368b12"
+    url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.63/tnr_0.1.63_darwin_amd64.tar.gz"
+    sha256 "7fa16028d9ab533f1d41e6bb17a113cedc5a0a4dd9e8d2636cbefe5e38890612"
 
     def install
       bin.install "tnr"
     end
   end
   if Hardware::CPU.arm?
-    url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.61/tnr_0.1.61_darwin_arm64.tar.gz"
-    sha256 "0b3be72b2ca3414fae2b4b8666264e531283d4f6737d810a9f3ff8e33f37dfaa"
+    url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.63/tnr_0.1.63_darwin_arm64.tar.gz"
+    sha256 "2e64ea7990daa148d3e06e6dfd21da04a27b4360170ba531797697a9e083e0b9"
 
     def install
       bin.install "tnr"
