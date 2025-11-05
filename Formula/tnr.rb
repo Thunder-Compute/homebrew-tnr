@@ -5,21 +5,21 @@
 class Tnr < Formula
   desc "Thunder Compute CLI"
   homepage "https://github.com/Thunder-Compute/thunder-cli"
-  version "0.1.45"
+  version "0.1.46"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.45/tnr_0.1.45_darwin_amd64.tar.gz"
-      sha256 "136b3eeef0c59129a674dbe44c063a4206cbe0755a94dfe2fa6acf968141f699"
+      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.46/tnr_0.1.46_darwin_amd64.tar.gz"
+      sha256 "1b2672ae49d6e781fbd5a0fc234d896b4afb8f5ca2060eb1db2eab69ac049402"
 
       def install
         bin.install "tnr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.45/tnr_0.1.45_darwin_arm64.tar.gz"
-      sha256 "70c15488166391f6070af7b16796b0f87e17c0cccb51e8327dba26fbc97fb799"
+      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.46/tnr_0.1.46_darwin_arm64.tar.gz"
+      sha256 "c3a3c9902bbeb9159e007e2e78a16fbbd0ee5527132870eecc1f4183c5c0e57e"
 
       def install
         bin.install "tnr"
@@ -29,15 +29,15 @@ class Tnr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.45/tnr_0.1.45_linux_amd64.tar.gz"
-      sha256 "683d1541ab6fdd7f89beddc7277abd0125c8250d9ea6f8cb143fbdacfc96311e"
+      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.46/tnr_0.1.46_linux_amd64.tar.gz"
+      sha256 "eb2b7d7f2665d26b6ad4984b03a6a72e58dcfd98e2e6d33fcb40d8659cfac3b3"
       def install
         bin.install "tnr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.45/tnr_0.1.45_linux_arm64.tar.gz"
-      sha256 "2e74c96393bb4113e2e68e475ce892d4a8b29dfadeeb0354135f3b5424b64721"
+      url "https://thunder-cli-releases.s3.ap-southeast-2.amazonaws.com/tnr/releases/0.1.46/tnr_0.1.46_linux_arm64.tar.gz"
+      sha256 "af756b20948ceef80d45f755150f5c5ef9509b3f5c8e16ba9339c82b7e688ab8"
       def install
         bin.install "tnr"
       end
