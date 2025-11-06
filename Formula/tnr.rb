@@ -5,21 +5,21 @@
 class Tnr < Formula
   desc "Thunder Compute CLI"
   homepage "https://github.com/Thunder-Compute/thunder-cli"
-  version "0.1.84-yubikey-test"
+  version "0.0.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.1.84-yubikey-test/tnr_0.1.84-yubikey-test_darwin_amd64.tar.gz"
-    sha256 "c9b977fec2ced86e71eb23815a9c8e63c60d6590dbe71871c6ba7a4c1f330bf8"
+    url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.0.2/tnr_0.0.2_darwin_amd64.tar.gz"
+    sha256 "8089d7ecaf41ed9173151bd2220fc9e98a4b5f59df8c720060631fd589f8d6a7"
 
     def install
       bin.install "tnr"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.1.84-yubikey-test/tnr_0.1.84-yubikey-test_darwin_arm64.tar.gz"
-    sha256 "66b8b16eb944b7ac5476485aa5fcb1685d328ee49e4cc82f1666379c83b1f112"
+    url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.0.2/tnr_0.0.2_darwin_arm64.tar.gz"
+    sha256 "0dad55e89e7f99f6dee6e7ce661cfe3aebd8adcec0cbe717f9d713218106c567"
 
     def install
       bin.install "tnr"
