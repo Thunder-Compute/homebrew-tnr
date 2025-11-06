@@ -11,7 +11,7 @@ class Tnr < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.1.84-yubikey-test/tnr_0.1.84-yubikey-test_darwin_amd64.tar.gz"
-    sha256 "73e47ac576ca08b2658f399041105c4d24b7f8a806679878c0615b89e90f2044"
+    sha256 "c9b977fec2ced86e71eb23815a9c8e63c60d6590dbe71871c6ba7a4c1f330bf8"
 
     def install
       bin.install "tnr"
@@ -19,7 +19,7 @@ class Tnr < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/Thunder-Compute/thunder-cli/releases/download/v0.1.84-yubikey-test/tnr_0.1.84-yubikey-test_darwin_arm64.tar.gz"
-    sha256 "1e94496ea219ef11b0d608749dc52d4cd271e000b9d34d801253208d6baba2e5"
+    sha256 "66b8b16eb944b7ac5476485aa5fcb1685d328ee49e4cc82f1666379c83b1f112"
 
     def install
       bin.install "tnr"
